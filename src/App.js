@@ -8,16 +8,14 @@ import Projects from "./Components/Projects/Projects";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about-me" element={<About />} />
-          </Routes>
-        </BrowserRouter>
-      </header>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about-me" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

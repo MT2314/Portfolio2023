@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+
+import "./assets/NavbarStyles.scss";
 
 export const Navbar = () => {
+  // const [location, setLocation] = useState();
+  const location = window.location.pathname;
+
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -25,17 +30,27 @@ export const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">
+              <a
+                class={`nav-link  ${location === "/" && "active"}`}
+                aria-current="page"
+                href="/"
+              >
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects">
+            <li class={`nav-item `}>
+              <a
+                class={`nav-link ${location === "/projects" && "active"}`}
+                href="/projects"
+              >
                 Projects
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about-me">
+            <li class={`nav-item`}>
+              <a
+                class={`nav-link ${location === "/about-me" && "active"}`}
+                href="/about-me"
+              >
                 About Me
               </a>
             </li>
