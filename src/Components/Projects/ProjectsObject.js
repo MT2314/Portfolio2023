@@ -15,7 +15,7 @@ import TeamBuilder from "./assets/projects/TeamBuilder.jpg";
 const portfolios = [
   {
     id: 1,
-    category: "MERN",
+    category: ["MERN"],
     link1: "https://guarded-dusk-24354.herokuapp.com/",
     link2: "https://github.com/P3TeamTwo/p3",
     icon1: "Website",
@@ -28,7 +28,7 @@ const portfolios = [
   },
   {
     id: 2,
-    category: "Handlebars",
+    category: ["Handlebars"],
     link1: "https://snowmanagement.herokuapp.com/",
     link2: "https://github.com/MT2314/snow-removal-mgmt",
     icon1: "Website",
@@ -41,7 +41,7 @@ const portfolios = [
   },
   {
     id: 3,
-    category: "MERN",
+    category: ["MERN"],
     link1: "https://story-book-board.herokuapp.com",
     link2: "https://github.com/MT2314/Google-Book-Search",
     icon1: "Website",
@@ -54,7 +54,7 @@ const portfolios = [
   },
   {
     id: 4,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://mt2314.github.io/Date-Night-Planner/",
     link2: "https://github.com/MT2314/Date-Night-Planner",
     icon1: "Website",
@@ -67,7 +67,7 @@ const portfolios = [
   },
   {
     id: 5,
-    category: "React",
+    category: ["React"],
     link1: "https://mt2314.github.io/Task-Tracker/",
     link2: "https://github.com/MT2314/Task-Tracker",
     icon1: "Website",
@@ -80,7 +80,7 @@ const portfolios = [
   },
   {
     id: 6,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://burger-ordersystem.herokuapp.com/",
     link2: "https://github.com/MT2314/Burger-OrderSystem",
     icon1: "Website",
@@ -93,7 +93,7 @@ const portfolios = [
   },
   {
     id: 7,
-    category: "React",
+    category: ["React"],
     link1: "https://employee-database--system.herokuapp.com/",
     link2: "https://mt2314.github.io/Employee-Directory",
     icon1: "Website",
@@ -106,7 +106,7 @@ const portfolios = [
   },
   {
     id: 8,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://web-note-application.herokuapp.com",
     link2: "https://github.com/MT2314/Web-Note-App",
     icon1: "Website",
@@ -119,7 +119,7 @@ const portfolios = [
   },
   {
     id: 9,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://mt2314.github.io/True-Weather-App/",
     link2: "https://github.com/MT2314/True-Weather-App",
     icon1: "Website",
@@ -131,7 +131,7 @@ const portfolios = [
   },
   {
     id: 10,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://exercisetrackandgraph.herokuapp.com/",
     link2: "https://github.com/MT2314/Exercise-Tracker",
     icon1: "Website",
@@ -144,7 +144,7 @@ const portfolios = [
   },
   {
     id: 11,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://exercisetrackandgraph.herokuapp.com/",
     link2: "https://github.com/MT2314/Budget-Tracker",
     icon1: "Website",
@@ -157,7 +157,7 @@ const portfolios = [
   },
   {
     id: 12,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://mt2314.github.io/Dynamic-Day-Planner/",
     link2: "https://github.com/MT2314/Dynamic-Day-Planner",
     icon1: "Website",
@@ -170,7 +170,7 @@ const portfolios = [
   },
   {
     id: 13,
-    category: "Javascript",
+    category: ["Javascript"],
     link1: "https://mt2314.github.io/Team_Builder/",
     link2: "https://github.com/MT2314/Team_Builder",
     icon1: "Website",

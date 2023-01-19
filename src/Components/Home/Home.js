@@ -18,7 +18,7 @@ export const Home = () => {
         <ContactPage show={modalShow} onHide={() => setModalShow(false)} />
 
         {!modalShow && (
-          <header className="hero">
+          <div className="hero">
             <h1 className="hero-text">
               Hi, I am
               <span> Mike Tkachuk.</span>
@@ -50,15 +50,15 @@ export const Home = () => {
                 <AiFillLinkedin className="icon ln" />
               </a>
             </div>
-          </header>
+            <Button
+              className="ContactForm"
+              variant="primary"
+              onClick={() => setModalShow(true)}
+            >
+              Contact Me
+            </Button>
+          </div>
         )}
-        <Button
-          className="ContactForm"
-          variant="primary"
-          onClick={() => setModalShow(true)}
-        >
-          Contact Me
-        </Button>
       </div>
     </>
   );
