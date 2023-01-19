@@ -19,9 +19,7 @@ function ImageSection() {
           I have designed and developed web applications using a variety of
           technologies, frame works and libraries. I am comfortable using API's,
           third-party integrations as well as managing both SQL and NoSQL
-          databases. Trained in the MERN stack with a mobile first approach, I
-          have some experience creating offline ready progressive web
-          applications.
+          databases. Trained in the MERN stack with a mobile first approach.
         </p>
         <div className="about-details">
           <div className="left-section">
