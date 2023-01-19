@@ -14,7 +14,7 @@ export const Home = () => {
   const [modalShow, setModalShow] = useState(false);
   return (
     <>
-      <div className="HomePage">
+      <div className="page">
         <ContactPage show={modalShow} onHide={() => setModalShow(false)} />
 
         {!modalShow && (
