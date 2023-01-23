@@ -11,7 +11,7 @@ import taskTracker from "./assets/projects/taskTracker.jpg";
 import exerciseTracker from "./assets/projects/exerciseTracker.jpg";
 import budgetTracker from "./assets/projects/budgetTracker.jpg";
 import TeamBuilder from "./assets/projects/TeamBuilder.jpg";
-
+import Book_Shelf from "./assets/projects/Book_Shelf.png";
 const portfolios = [
   {
     id: 1,
@@ -57,10 +57,10 @@ const portfolios = [
     icon1: "Website",
     icon2: "Github",
     live: true,
-    image: TeamBuilder,
-    title: "Book Search",
+    image: Book_Shelf,
+    title: "Book Shelf",
     desription:
-      "Mindshare is a smart personal journal, the user is prompted to do a daily self reflection which are converted and analyzed to create a large array of visual and functional tools to assist in personal development",
+      "Your own digital bookshelf. Curate your must read list, search through millions of books or choose one on the New York Times Best Seller list on the search screen. Keep track of the books you wish to read, mark books which you have read and favorite those that snad out. Sharing lists coming soon... ",
   },
   {
     id: 3,
