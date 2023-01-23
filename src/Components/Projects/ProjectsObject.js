@@ -16,18 +16,19 @@ const portfolios = [
   {
     id: 1,
     category: [
-      "React",
-      "Material Ui",
-      "MongoDB/Atlas",
       "Node",
       "Express",
-      "Jsonwebtoken",
-      "Mongoose",
-      "Passport",
-      "Jest",
       "Axios",
+      "React",
+      "MongoDB/Atlas",
+      "Mongoose",
+      "Jest",
+      "Jsonwebtoken",
+      "Passport",
       "Validator",
       "Canvasjs",
+      "Material Ui",
+      "Hosted on Heroku",
     ],
     link1: "https://mind-share.herokuapp.com/",
     link2: "https://github.com/P3TeamTwo/p3",
@@ -41,6 +42,29 @@ const portfolios = [
   },
   {
     id: 2,
+    category: [
+      "Node",
+      "Express",
+      "Axios",
+      "React",
+      "MongoDB/Atlas",
+      "Mongoose",
+      "Bootstrap",
+      "Hosted on Render",
+    ],
+    link1:
+      "https://dashboard.render.com/web/srv-cf74k59a6gdjkk5qsok0/deploys/dep-cf74qv6n6mplrj2betn0",
+    link2: "https://github.com/MT2314/Google-Book-Search",
+    icon1: "Website",
+    icon2: "Github",
+    live: true,
+    image: TeamBuilder,
+    title: "Book Search",
+    desription:
+      "Mindshare is a smart personal journal, the user is prompted to do a daily self reflection which are converted and analyzed to create a large array of visual and functional tools to assist in personal development",
+  },
+  {
+    id: 3,
     category: ["Handlebars"],
     link1: "https://snowmanagement.herokuapp.com/",
     link2: "https://github.com/MT2314/snow-removal-mgmt",
@@ -53,7 +77,7 @@ const portfolios = [
       "Employee Management System. Allow the user to be able to add employees and jobs to a database. Make teams outs of the employees and assign jobs to them. Track your crews and job completion",
   },
   {
-    id: 3,
+    id: 4,
     category: ["MERN"],
     link1: "https://story-book-board.herokuapp.com",
     link2: "https://github.com/MT2314/Google-Book-Search",
@@ -66,7 +90,7 @@ const portfolios = [
       "A Storybook application. Create, Edit and Share stories. Make stories public or post them on the public board for others to read",
   },
   {
-    id: 4,
+    id: 5,
     category: ["Javascript"],
     link1: "https://mt2314.github.io/Date-Night-Planner/",
     link2: "https://github.com/MT2314/Date-Night-Planner",
@@ -79,7 +103,7 @@ const portfolios = [
       "This application allows a user to enter a location and how far they are willing to travel. Based on this information, a list of theatres will be generated and displayed on the page. The user will be able to select a theatre, and a list of movies and their showtimes will be displayed. The user may then select a movie and specific show-time to book their tickets.",
   },
   {
-    id: 5,
+    id: 6,
     category: ["React"],
     link1: "https://mt2314.github.io/Task-Tracker/",
     link2: "https://github.com/MT2314/Task-Tracker",
@@ -92,7 +116,7 @@ const portfolios = [
       "Seamless, responsive and dynamic task tracker that reads and writes to a JSON file.",
   },
   {
-    id: 6,
+    id: 7,
     category: ["Javascript"],
     link1: "https://burger-ordersystem.herokuapp.com/",
     link2: "https://github.com/MT2314/Burger-OrderSystem",
@@ -105,7 +129,7 @@ const portfolios = [
       "A Burger Order Management System. User inputs their order into a form. Input is stored in a MYSQL database. The webpage is reloaded adding the users burger order onto the webpage using Handle Bars. Application is modelled in MVC. Home-made ORM.",
   },
   {
-    id: 7,
+    id: 8,
     category: ["React"],
     link1: "https://employee-database--system.herokuapp.com/",
     link2: "https://mt2314.github.io/Employee-Directory",
@@ -118,7 +142,7 @@ const portfolios = [
       "Built using React Seeding Data with Web Api to be used as props to display data. Seemless Search and Sort Database",
   },
   {
-    id: 8,
+    id: 9,
     category: ["Javascript"],
     link1: "https://web-note-application.herokuapp.com",
     link2: "https://github.com/MT2314/Web-Note-App",
@@ -131,7 +155,7 @@ const portfolios = [
       "User is able to add notes with a title to be saved into a json file. User can Delete and view previously saved notes",
   },
   {
-    id: 9,
+    id: 10,
     category: ["Javascript"],
     link1: "https://mt2314.github.io/True-Weather-App/",
     link2: "https://github.com/MT2314/True-Weather-App",
@@ -143,7 +167,7 @@ const portfolios = [
     desription: "Dynamic Weather App - Live Updates  Open Weather Api",
   },
   {
-    id: 10,
+    id: 11,
     category: ["Javascript"],
     link1: "https://exercisetrackandgraph.herokuapp.com/",
     link2: "https://github.com/MT2314/Exercise-Tracker",
@@ -156,7 +180,7 @@ const portfolios = [
       "User is able to track their exercise routines and review their data in useful charts",
   },
   {
-    id: 11,
+    id: 12,
     category: ["Javascript"],
     link1: "https://exercisetrackandgraph.herokuapp.com/",
     link2: "https://github.com/MT2314/Budget-Tracker",
@@ -169,7 +193,7 @@ const portfolios = [
       "Offline ready exercise tracker. Syncronizes inputed data to databse when connection is re-established Saves backed up data in IndexDb.",
   },
   {
-    id: 12,
+    id: 13,
     category: ["Javascript"],
     link1: "https://mt2314.github.io/Dynamic-Day-Planner/",
     link2: "https://github.com/MT2314/Dynamic-Day-Planner",
@@ -182,7 +206,7 @@ const portfolios = [
       "Dynamically Built Daily Planner Using Moment to Keep Date, and Color Coded Time Slots. Saves to Local Storage and Time Blocks are Repopulated on Refresh",
   },
   {
-    id: 13,
+    id: 14,
     category: ["Javascript"],
     link1: "https://mt2314.github.io/Team_Builder/",
     link2: "https://github.com/MT2314/Team_Builder",
