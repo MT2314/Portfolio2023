@@ -15,8 +15,21 @@ import TeamBuilder from "./assets/projects/TeamBuilder.jpg";
 const portfolios = [
   {
     id: 1,
-    category: ["MERN"],
-    link1: "https://guarded-dusk-24354.herokuapp.com/",
+    category: [
+      "React",
+      "Material Ui",
+      "MongoDB/Atlas",
+      "Node",
+      "Express",
+      "Jsonwebtoken",
+      "Mongoose",
+      "Passport",
+      "Jest",
+      "Axios",
+      "Validator",
+      "Canvasjs",
+    ],
+    link1: "https://mind-share.herokuapp.com/",
     link2: "https://github.com/P3TeamTwo/p3",
     icon1: "Website",
     icon2: "Github",
