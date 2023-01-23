@@ -52,8 +52,7 @@ const portfolios = [
       "Bootstrap",
       "Hosted on Render",
     ],
-    link1:
-      "https://dashboard.render.com/web/srv-cf74k59a6gdjkk5qsok0/deploys/dep-cf74qv6n6mplrj2betn0",
+    link1: "https://book-shelf-wts5.onrender.com",
     link2: "https://github.com/MT2314/Google-Book-Search",
     icon1: "Website",
     icon2: "Github",
