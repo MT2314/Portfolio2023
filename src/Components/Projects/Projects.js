@@ -1,6 +1,4 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { CgMediaLive } from "react-icons/cg";
 import ProjectObject from "./ProjectsObject";
 
 import "./assets/projects-styles.scss";

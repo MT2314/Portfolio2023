@@ -36,7 +36,7 @@ function ImageSection() {
           </div>
         </div>
         <div className="resume">
-          <a href={resume} target="_blank">
+          <a href={resume} target="_blank" rel="noreferrer">
             <ImLibreoffice size={50}></ImLibreoffice>
             <span>Resume</span>
           </a>
@@ -45,6 +45,7 @@ function ImageSection() {
           <a
             href={"https://www.linkedin.com/in/mike-tkachuk-82909111a/"}
             target="_blank"
+            rel = "noreferrer"
           >
             <RiLinkedinBoxLine size={50}></RiLinkedinBoxLine>
             <span>LinkedIn</span>

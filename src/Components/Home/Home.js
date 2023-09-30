@@ -28,7 +28,7 @@ export const Home = () => {
             using modern technologies.
           </p>
           <div className="icons">
-            <a href={resume} className="icon-holder" target="_blank">
+            <a href={resume} className="icon-holder" target="_blank" rel="noreferrer">
               <ImLibreoffice
                 className="icon resume"
                 style={{ height: "80%" }}
@@ -37,14 +37,14 @@ export const Home = () => {
             <a
               href="https://github.com/MT2314"
               className="icon-holder"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <AiFillGithub className="icon gh" />
             </a>
             <a
               href="https://linkedin.com/in/mike-tkachuk-82909111a"
               className="icon-holder"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <AiFillLinkedin className="icon ln" />
             </a>
