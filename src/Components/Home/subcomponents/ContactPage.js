@@ -122,7 +122,7 @@ function ContactPage(props) {
                   <div className="text-center text-md-left">
                     <input
                       type="submit"
-                      className="btn btn-primary btn-md"
+                      className="about-btn btn-primary btn-md"
                       value="Send"
                     />
                     {email && (

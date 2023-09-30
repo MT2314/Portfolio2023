@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-import { Container, Navbar, Nav, NavDropdown, Row } from "react-bootstrap";
-import LoginPopup from "./Components/Authentication/loginPopup";
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import Login from "./Components/Authentication/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
 import routes from "./routes";
@@ -57,14 +57,11 @@ export const Navigation = () => {
                   Something
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <Container fluid="true">
-                  <Row>
-                    <LoginPopup
-                      setUserVerified={setUserVerified}
-                      userVerified={userVerified}
-                    />
-                  </Row>
-                </Container>
+
+                <Login
+                  setUserVerified={setUserVerified}
+                  userVerified={userVerified}
+                />
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
