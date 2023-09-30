@@ -31,7 +31,7 @@ export const Navigation = () => {
     <GoogleOAuthProvider clientId="900944504878-7ao7scmu0bg2ciggua360q4bi8joetn9.apps.googleusercontent.com">
       <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">Mike Tkachuk</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
