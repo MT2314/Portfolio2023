@@ -54,11 +54,11 @@ code {
 }
 
 .dropdown-menu {
-  @media (max-width: 1800px) {
-    width: 35rem !important;
+  @media (min-width: 992px) {
+    width: 30rem !important;
   }
   @media (max-width: 992px) {
-    width: 30rem !important;
+    width: 25rem !important;
   }
   @media (max-width: 768px) {
     width: 20rem !important;
@@ -67,7 +67,7 @@ code {
 
 // LOGIN COMPONENT
 .message {
-  @media (max-width: 1800px) {
+  @media (min-width: 992px) {
     font-size: 2.5rem;
   }
   @media (max-width: 992px) {

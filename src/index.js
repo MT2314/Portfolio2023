@@ -7,7 +7,7 @@ import {
   useLocation,
   useOutlet,
 } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Login from "./Components/Authentication/Login";
@@ -26,6 +26,12 @@ export const Navigation = () => {
   // Find the route that matches the current location and get its nodeRef
   const { nodeRef } =
     routes.find((route) => route.path === location.pathname) ?? {};
+  // Check if the admin parameter is set to mike
+  const [isAdmin, setIsAdmin] = useState(false);
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    setIsAdmin(urlParams.get("admin") === "mike");
+  }, []);
 
   return (
     <GoogleOAuthProvider clientId="900944504878-7ao7scmu0bg2ciggua360q4bi8joetn9.apps.googleusercontent.com">
@@ -48,51 +54,26 @@ export const Navigation = () => {
                   {route.name}
                 </Nav.Link>
               ))}
-              <NavDropdown title="Dev Tools" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-
-                <Login
-                  setUserVerified={setUserVerified}
-                  userVerified={userVerified}
-                />
-              </NavDropdown>
+              {isAdmin && (
+                <NavDropdown title="Dev Tools" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <Login
+                    setUserVerified={setUserVerified}
+                    userVerified={userVerified}
+                  />
+                </NavDropdown>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-        className="nav-bar"
-      >
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto nav-item">
-            {routes.map((route) => (
-              <Nav.Link
-                key={route.path}
-                as={NavLink}
-                to={route.path}
-                className={({ isActive }) =>
-                  isActive ? "active nav-item" : "nav-item"
-                }
-                end
-              >
-                {route.name}
-              </Nav.Link>
-            ))}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar> */}
       <div className="App">
         <Container className="container" fluid>
           <SwitchTransition>
