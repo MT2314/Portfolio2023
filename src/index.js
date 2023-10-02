@@ -14,7 +14,6 @@ import Login from "./Components/Authentication/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
 import routes from "./routes";
-
 // Navigation
 export const Navigation = () => {
   // Authentication

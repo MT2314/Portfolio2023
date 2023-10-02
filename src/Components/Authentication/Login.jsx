@@ -1,30 +1,47 @@
 import React, { useState } from "react";
 import { useGoogleLogin, googleLogout } from "@react-oauth/google";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import axios from "axios";
 
 // Component for displaying welcome message
-const WelcomeMessage = () => (
-  <span className="message">
-    Welcome
-  </span>
-);
+
+const ALLOWED_USERS = ["tkachuk2314@gmail.com"];
+
+const WelcomeMessage = () => <span className="message">Welcome</span>;
 
 // Component for displaying unauthorized message
-const UnauthorizedMessage = () => (
-  <span className="message">
-    Unauthorized
-  </span>
-);
+const UnauthorizedMessage = () => <span className="message">Unauthorized</span>;
+
+const getUserInfo = async (accessToken) => {
+  const response = await axios.get(
+    "https://www.googleapis.com/oauth2/v3/userinfo",
+    {
+      headers: {
+        Authorization: "Bearer " + accessToken,
+      },
+    }
+  );
+  const user = response.data;
+
+  if (ALLOWED_USERS.includes(user.email)) return user;
+  return null;
+};
 
 // Main component for login
 export const Login = ({ setUserVerified, userVerified }) => {
   // State for handling invalid user
   const [invalidUser, setInvalidUser] = useState(false);
 
-  // Function to handle successful login
-  const handleLoginSuccess = (tokenResponse) => {
-    setUserVerified(true);
-    console.log(tokenResponse);
+  // Function to handle login
+  const handleLogin = (tokenResponse) => {
+    const { access_token } = tokenResponse;
+    getUserInfo(access_token).then((userInfo) => {
+      if (!userInfo) handleLoginError("NOT AUTHORIZED");
+      else {
+        setUserVerified(true);
+        setInvalidUser(false);
+      }
+    });
   };
 
   // Function to handle login error
@@ -36,7 +53,7 @@ export const Login = ({ setUserVerified, userVerified }) => {
 
   // Google login hook
   const login = useGoogleLogin({
-    onSuccess: handleLoginSuccess,
+    onSuccess: handleLogin,
     onError: handleLoginError,
   });
 
@@ -53,10 +70,7 @@ export const Login = ({ setUserVerified, userVerified }) => {
 
   // Render login popup
   return (
-    <Container
-      fluid="true"
-      className="login-container"
-    >
+    <Container fluid="true" className="login-container">
       <Row className="login-row">
         {(userVerified || invalidUser) && (
           <Col xs="6" md="6" lg="6">
@@ -66,9 +80,9 @@ export const Login = ({ setUserVerified, userVerified }) => {
         )}
 
         <Col
-          xs={userVerified ? "6" : "12"}
-          md={userVerified ? "6" : "12"}
-          lg={userVerified ? "6" : "12"}
+          xs={userVerified || invalidUser ? "6" : "12"}
+          md={userVerified || invalidUser ? "6" : "12"}
+          lg={userVerified || invalidUser ? "6" : "12"}
           className="login-col"
         >
           {!userVerified ? (
